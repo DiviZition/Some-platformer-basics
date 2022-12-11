@@ -1,4 +1,4 @@
-## Unity ##
+## Unity YAMLMERGE##
 *.cs diff=csharp text
 *.cginc text
 *.shader text
@@ -11,6 +11,21 @@
 *.asset merge=unityyamlmerge eol=lf
 *.meta merge=unityyamlmerge eol=lf
 *.controller merge=unityyamlmerge eol=lf
+
+## Unity ##
+*.cs =lfs diff=lfs merge=lfs -text
+*.cginc =lfs diff=lfs merge=lfs -text
+*.shader =lfs diff=lfs merge=lfs -text
+*.mat =lfs diff=lfs merge=lfs -text
+*.anim =lfs diff=lfs merge=lfs -text
+*.unity =lfs diff=lfs merge=lfs -text
+*.prefab =lfs diff=lfs merge=lfs -text
+*.physicsMaterial2D =lfs diff=lfs merge=lfs -text
+*.physicMaterial merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+
 ## git-lfs ##
 #Image
 *.jpg filter=lfs diff=lfs merge=lfs -text
